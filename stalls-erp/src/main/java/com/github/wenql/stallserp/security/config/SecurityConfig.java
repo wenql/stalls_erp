@@ -28,7 +28,6 @@ import org.springframework.stereotype.Component;
 /**
  * 对SpringSecurity的配置的扩展，支持自定义白名单资源路径和查询用户逻辑
  */
-@Component
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired(required = false)
