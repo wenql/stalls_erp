@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan({"com.macro.mall.tiny.modules.*.mapper"})
+@MapperScan({"com.github.wenql.stallserp.modules.*.mapper"})
 public class MyBatisConfig {
     @Bean
     public PaginationInterceptor paginationInterceptor() {

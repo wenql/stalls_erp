@@ -3,7 +3,7 @@
 <mapper namespace="com.github.wenql.stallserp.modules.sys.mapper.SysResourceMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.macro.mall.tiny.modules.ums.model.UmsResource">
+    <resultMap id="BaseResultMap" type="com.github.wenql.stallserp.modules.sys.model.SysResource">
         <id column="id" property="id" />
         <result column="create_time" property="createTime" />
         <result column="name" property="name" />
@@ -12,7 +12,7 @@
         <result column="category_id" property="categoryId" />
     </resultMap>
 
-    <select id="getResourceList" resultType="com.macro.mall.tiny.modules.ums.model.UmsResource">
+    <select id="getResourceList" resultType="com.github.wenql.stallserp.modules.sys.model.SysResource">
         SELECT
             ur.id id,
             ur.create_time createTime,
@@ -32,7 +32,7 @@
             ur.id
     </select>
 
-    <select id="getResourceListByRoleId" resultType="com.macro.mall.tiny.modules.ums.model.UmsResource">
+    <select id="getResourceListByRoleId" resultType="com.github.wenql.stallserp.modules.sys.model.SysResource">
         SELECT
             r.id id,
             r.create_time createTime,

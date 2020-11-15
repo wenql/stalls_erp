@@ -4,7 +4,7 @@
 
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.macro.mall.tiny.modules.ums.model.UmsMenu">
+    <resultMap id="BaseResultMap" type="com.github.wenql.stallserp.modules.sys.model.SysMenu">
         <id column="id" property="id" />
         <result column="parent_id" property="parentId" />
         <result column="create_time" property="createTime" />
@@ -16,7 +16,7 @@
         <result column="hidden" property="hidden" />
     </resultMap>
 
-    <select id="getMenuList" resultType="com.macro.mall.tiny.modules.ums.model.UmsMenu">
+    <select id="getMenuList" resultType="com.github.wenql.stallserp.modules.sys.model.SysMenu">
         SELECT
             m.id id,
             m.parent_id parentId,
@@ -38,7 +38,7 @@
         GROUP BY
             m.id
     </select>
-    <select id="getMenuListByRoleId" resultType="com.macro.mall.tiny.modules.ums.model.UmsMenu">
+    <select id="getMenuListByRoleId" resultType="com.github.wenql.stallserp.modules.sys.model.SysMenu">
         SELECT
             m.id id,
             m.parent_id parentId,
